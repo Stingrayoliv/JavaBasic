@@ -33,9 +33,9 @@ public class Homework019TasksBeforeArrays {
 //        System.out.println(everyNth("abcdefg", 2)); //"aceg"
 //        System.out.println(everyNth("abcdefg", 3)); //"adg"
 
-//        System.out.println(monkeyTrouble(true, true)); // true
-//        System.out.println(monkeyTrouble(false, false)); // true
-//        System.out.println(monkeyTrouble(true, false)); //false
+        System.out.println(monkeyTrouble(true, true)); // true
+        System.out.println(monkeyTrouble(false, false)); // true
+        System.out.println(monkeyTrouble(true, false)); //false
     }
 
     // 19.5
@@ -127,6 +127,7 @@ public class Homework019TasksBeforeArrays {
     //19.12 We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble
     // if they are both smiling or if neither of them is smiling. Return true if we are in trouble.
     public static boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
-        return aSmile == true && bSmile == true || aSmile == false && bSmile == false;
+        //return aSmile == true && bSmile == true || aSmile == false && bSmile == false;
+        return !(aSmile^bSmile); // второй вариант решения
     }
 }
