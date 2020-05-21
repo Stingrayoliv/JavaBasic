@@ -25,10 +25,6 @@ public class Main {
 //        System.out.println(HelloLogic190602.loneSum(3, 2, 3)); //2
 //        System.out.println(HelloLogic190602.loneSum(3, 3, 3)); //0
 
-        System.out.println(HelloString190301.makeTags("i", "Yay")); //"<i>Yay</i>"
-        System.out.println(HelloString190301.makeTags("i", "Hello")); //"<i>Hello</i>"
-        System.out.println(HelloString190301.makeTags("cite", "Yay")); //"<cite>Yay</cite>"
-
 
     }
 }
