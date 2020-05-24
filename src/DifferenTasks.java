@@ -9,7 +9,8 @@ public class DifferenTasks {
         //findSum();
         //showMultiplicationTable();
         //System.out.println(findSumDeposit(1000, 3.5, 7));
-        getString();
+//        getString();
+
     }
 
     // пример добавления 3-х номеров
@@ -48,11 +49,10 @@ public class DifferenTasks {
     }
 
     public static void getString() {
-        String a = "g";
-        System.out.println(a.length());
+        String a = "hh";
+//        System.out.println(a.length());
         System.out.println(a.charAt(0));
-        System.out.println(a.substring(0));
+//        System.out.println(a.substring(0));
     }
-
 
 }
