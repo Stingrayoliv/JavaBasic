@@ -10,6 +10,7 @@ public class DifferenTasks {
         //showMultiplicationTable();
         //System.out.println(findSumDeposit(1000, 3.5, 7));
 //        getString();
+        makeBack("А роза упала на лапу Азора");
 
     }
 
@@ -54,5 +55,16 @@ public class DifferenTasks {
         System.out.println(a.charAt(0));
 //        System.out.println(a.substring(0));
     }
+    public static void makeBack(String first) {
+        //String a = first.toLowerCase();
+        String reverseA = "";
+
+        for (int i = first.length()-1; i >=0 ; i--) {
+            reverseA = reverseA + first.charAt(i);
+
+        }
+        System.out.println(reverseA);
 
 }
+}
+
