@@ -11,7 +11,6 @@ public class DifferenTasks {
         //System.out.println(findSumDeposit(1000, 3.5, 7));
 //        getString();
         makeBack("А роза упала на лапу Азора");
-
     }
 
     // пример добавления 3-х номеров
