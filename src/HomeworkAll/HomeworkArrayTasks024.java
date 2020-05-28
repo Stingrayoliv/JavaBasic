@@ -1,7 +1,5 @@
 package HomeworkAll;
-
 import java.lang.reflect.Array;
-
 /**
  * FirstProject
  * 5/27/20 15: 19
