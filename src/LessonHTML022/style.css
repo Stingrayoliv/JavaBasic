@@ -1,0 +1,91 @@
+/* body {
+    background-color: green;
+}
+h2 {
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    background-color: orange;
+    width: 600px;
+    margin: 100px 200px 100px 200px;
+}
+.padding {
+    color: blue;
+    padding-top: 100px;
+    margin: 50px 100px 200px 400px;
+}
+.h2 {
+    color: red;
+    font-size: 60px;
+    text-align: right;
+    background-color: purple;
+    width: 700px;
+    margin: 100px 200px 100px 200px;
+}
+#h2 {
+    color: aqua;
+
+} */
+.blok-1 {
+    background-color: red;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+}
+.blok-2 {
+    background-color: green;
+    width: 390px;
+    height: 190px;
+    margin-left: 400px;
+    border: 5px solid red;
+}
+.blok-3 {
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    margin-left: 800px;
+    padding: 100px 0px 0px 200px;
+}
+.wrap {
+    background-color: #ccc;
+    background-image: url(img/turm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+
+    width: 1200px;
+    margin: 0px auto;
+}
+.blok-2-small {
+    background-color: yellow;
+    width: 200px;
+    height: 100px;
+    margin: 50px auto;
+
+}
+.blok-3-small {
+    background-color: yellow;
+    width: 200px;
+    height: 100px;
+    
+}
+.blok-4 {
+    background-color: purple;
+    width: 400px;
+    height: 200px;  
+    margin-left: 800px;
+    margin-top: -600px;
+}
+.blok-5 {
+    background-color: orange;
+    width: 400px;
+    height: 200px;
+    margin-top: 200px;  
+}
+img {
+    width: 100%;
+    margin-top: -100px;
+    
+}
+

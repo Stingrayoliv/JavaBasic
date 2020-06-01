@@ -1,0 +1,41 @@
+.wrap {
+    max-width: 1000px;
+    margin: 0px auto;
+    background: #ccc;
+    color: #fff;
+}
+.header {
+    height: 150px;
+    background: darkblue;
+    margin-bottom: 10px;
+}
+.sadebar-left {
+    height: 500px;
+    width: 20%;
+    background: darkgreen;
+    float: left;
+    min-height: 500px;
+}
+.center {
+    height: 400px;
+    width: 63%;
+    background: darkred;
+    float: left;
+    margin: 0px 1%;
+}
+.sadebar-right {
+    height: 500px;
+    width: 15%;
+    background: olive;
+    overflow: auto;
+    float: left;
+}
+.clear {
+    clear: both;
+    
+}
+.futer {
+    height: 100px;
+    background: #333;
+    margin-top: 10px;
+}
