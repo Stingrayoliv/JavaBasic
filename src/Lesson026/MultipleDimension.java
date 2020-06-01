@@ -43,7 +43,7 @@ public class MultipleDimension {
             for (int elementik : veryLittleArray) {
                 System.out.print(elementik + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
@@ -59,7 +59,7 @@ public class MultipleDimension {
             for (int elementik : veryLittleArray) {
                 System.out.print(elementik + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
@@ -71,9 +71,9 @@ public class MultipleDimension {
                 monthCalendar[row][colum] = row * 7 + colum + 1; //+1 так как мы начинаем с 0, а месяца с таким кол-вом дней нет
                 System.out.print(" " + monthCalendar[row][colum]);
             }
-            System.out.println("");
+            System.out.println();
         }
-        System.out.println("");
+        System.out.println();
         System.out.println("Print element[1] [3], I expect 11: " + monthCalendar[1][3]);
     }
 
@@ -104,12 +104,11 @@ public class MultipleDimension {
             for (String value : littleArray) {
                 System.out.print(value + " ");
             }
-            System.out.println(""); // после выхода из первой строчки, чтобы была таблица
+            System.out.println(); // после выхода из первой строчки, чтобы была таблица
         }
     }
     public static void justExample() {
-        int arr[] = {2, 2, 1, 8, 3, 2, 2, 4, 2};
-// To fill complete array with a particular value
+        int[] arr = {2, 2, 1, 8, 3, 2, 2, 4, 2}; // To fill complete array with a particular value
         Arrays.fill(arr, 10);
         System.out.println("Array completely filled with 10\n" + Arrays.toString(arr));
         System.out.printf("Modified arr[] : %s", Arrays.toString(arr));
