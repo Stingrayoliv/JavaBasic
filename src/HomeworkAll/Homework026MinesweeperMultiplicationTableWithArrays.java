@@ -9,6 +9,7 @@ public class Homework026MinesweeperMultiplicationTableWithArrays {
         //makeMultiplicationTableWithArrays();
         makePlayMinesweeper();
     }
+
     // pythagorean multiplication table
     public static void makeMultiplicationTableWithArrays() {
         int[][] table = new int[10][10];
@@ -36,7 +37,7 @@ public class Homework026MinesweeperMultiplicationTableWithArrays {
         String[][] myArray = new String[10][10];
         for (int i = 0; i < myArray.length; i++) {
             for (int j = 0; j < myArray[i].length; j++) {
-                if(i + j == findRandomRowOrColumn(i, myArray.length)) {
+                if (i + j == findRandomRowOrColumn(i, myArray.length)) {
                     System.out.print("*" + "  ");
                 } else {
                     System.out.print("-" + "  ");
