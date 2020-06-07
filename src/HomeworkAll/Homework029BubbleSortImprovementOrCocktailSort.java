@@ -3,12 +3,13 @@ package HomeworkAll;
  * FirstProject
  * 6/4/20 20: 08
  */
-public class Homework029BubbleSortImprovement {
+// Коктельная сортировка
+public class Homework029BubbleSortImprovementOrCocktailSort {
     public static void main(String[] args) {
         int[] unSortArray = {5, 8, 4, 9, 1, -1, 6, 200, 90, 1};
         //myPrint(makeBubbleSortImprovement(unSortArray));
         //myPrint(makeBubbleSortImprovementTwo(unSortArray));
-        makeBubbleSortImprovementTwo(unSortArray);// for debugging
+        //makeBubbleSortImprovementTwo(unSortArray);// for debugging
     }
 
     public static int[] makeBubbleSortImprovement(int[] myArray) {
