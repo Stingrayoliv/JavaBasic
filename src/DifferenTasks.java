@@ -6,11 +6,12 @@ import java.util.Scanner;
  */
 public class DifferenTasks {
     public static void main(String[] args) {
+        makeBackTwo();
         //findSum();
         //showMultiplicationTable();
         //System.out.println(findSumDeposit(1000, 3.5, 7));
 //        getString();
-        makeBack("А роза упала на лапу Азора");
+        //makeBack("А роза упала на лапу Азора");
     }
 
     // пример добавления 3-х номеров
@@ -58,12 +59,21 @@ public class DifferenTasks {
         //String a = first.toLowerCase();
         String reverseA = "";
 
-        for (int i = first.length()-1; i >=0 ; i--) {
+        for (int i = first.length() - 1; i >= 0; i--) {
             reverseA = reverseA + first.charAt(i);
 
         }
         System.out.println(reverseA);
+    }
+
+        public static void makeBackTwo() {
+        String first = "mk";
+        String result = " ";
+        result = first.substring(0,1);
+            System.out.println(result);
 
 }
+
 }
+
 
