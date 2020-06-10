@@ -1,4 +1,4 @@
-package Lesson029;
+package Exercises;
 import java.util.Arrays;
 /**
  * FirstProject

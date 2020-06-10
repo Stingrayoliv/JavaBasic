@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 /**
  * FirstProject
  * 5/18/20 20: 01

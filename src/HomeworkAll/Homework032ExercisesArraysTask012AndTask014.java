@@ -1,6 +1,5 @@
 package HomeworkAll;
 import java.util.Arrays;
-
 /**
  * FirstProject
  * 6/9/20 16: 00
@@ -8,21 +7,23 @@ import java.util.Arrays;
 public class Homework032ExercisesArraysTask012AndTask014 {
     public static void main(String[] args) {
         //12
-        int[] a = {1, 6};
-        int[] b = {1, 8};
-        int[] c = {1, 11};
-        System.out.println(Arrays.toString(fizzBuzz(a))); //["1", "2", "Fizz", "4", "Buzz"]
-        System.out.println(Arrays.toString(fizzBuzz(b))); //["1", "2", "Fizz", "4", "Buzz", "Fizz", "7"]
-        System.out.println(Arrays.toString(fizzBuzz(c))); // ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]
+        int startOne = 1;
+        int endOne = 6;
+        int startTwo = 1;
+        int endTwo = 8;
+        int startThree = 1;
+        int endThree = 11;
+        System.out.println(Arrays.toString(fizzBuzz(startOne, endOne))); //["1", "2", "Fizz", "4", "Buzz"]
+        System.out.println(Arrays.toString(fizzBuzz(startTwo, endTwo))); //["1", "2", "Fizz", "4", "Buzz", "Fizz", "7"]
+        System.out.println(Arrays.toString(fizzBuzz(startThree, endThree))); // ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]
 
-        //13
-        int[] k = {10, 3, 5, 6}; //7
-        int[] l = {7, 2, 10, 9}; //8
-        int[] m = {2, 10, 7, 2}; //8
-        System.out.println(bigDiff(k));
-        System.out.println(bigDiff(l));
-        System.out.println(bigDiff(m));
-
+//        //13
+//        int[] k = {10, 3, 5, 6}; //7
+//        int[] l = {7, 2, 10, 9}; //8
+//        int[] m = {2, 10, 7, 2}; //8
+//        System.out.println(bigDiff(k));
+//        System.out.println(bigDiff(l));
+//        System.out.println(bigDiff(m));
     }
 
     // Exercises-Arrays-02 (Task 12)
@@ -34,29 +35,43 @@ public class Homework032ExercisesArraysTask012AndTask014 {
 // will make the String form of an int or other type. This version is a little more complicated than the usual version
 // since you have to allocate and index into an array instead of just printing, and we vary the start/end instead of
 // just always doing 1..100.
-    public static String[] fizzBuzz(int[] array) {
-        // в задаче нужно создать и вернуть новый масив String[]
-        int lsatValue = 0;
-        lsatValue = array[array.length - 1]; // найти последнее значение value в массиве, который был дан
-        int lengthNewArray = lsatValue - 1; //длина нового массива
-        String[] output = new String[lengthNewArray]; // создаем новый массив
-
-        for (int i = 0; i < output.length; i++) {
-            String valueOne = "Buzz";
-            String valueTwo = "Fizz";
-            String valueThree = "FizzBuzz";
-            if (i % 3 == 0) {
-                output[i] = valueOne;
-            } else if ((i % 5 == 0)) {
-                output[i] = valueTwo;
-            } else if (i % 3 == 0 & i % 5 == 5) {
-                output[i] = valueThree;
+    public static String[] fizzBuzz(int start, int end) {
+        String valueOne = "Buzz";
+        String valueTwo = "Fizz";
+        String valueThree = "FizzBuzz";
+        int lengthArray = end-start;
+        String[] output = new String[lengthArray];
+        for (int i = start; i <end; i++) {
+            if (i % 15 == 0) {
+                output[i-start] = valueThree;
+            } else if (i % 3 == 0) {
+                output[i-start] = valueTwo;
+            } else if (i % 5 == 0) {
+                output[i-start] = valueOne;
             } else {
-                output[i] = String.valueOf(i + 1); //i+1 так, как
+                output[i-start] = String.valueOf(i);
             }
-
         }
-        //System.out.println(Arrays.toString(output));
+//        lsatValue = array[array.length - 1]; // найти последнее значение value в массиве, который был дан
+//        int lengthNewArray = lsatValue - 1; //длина нового массива
+//        String[] output = new String[lengthNewArray]; // создаем новый массив
+//
+//        for (int i = 0; i < output.length; i++) {
+//            String valueOne = "Buzz";
+//            String valueTwo = "Fizz";
+//            String valueThree = "FizzBuzz";
+//            if (i % 3 == 0) {
+//                output[i] = valueOne;
+//            } else if ((i % 5 == 0)) {
+//                output[i] = valueTwo;
+//            } else if (i % 3 == 0 & i % 5 == 5) {
+//                output[i] = valueThree;
+//            } else {
+//                output[i] = String.valueOf(i + 1); //i+1 так, как
+//            }
+//
+//        }
+//        //System.out.println(Arrays.toString(output));
         return output;
     }
 
