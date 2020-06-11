@@ -1,6 +1,5 @@
 package sort.SelectionSort;
 import java.util.Arrays;
-
 /**
  * FirstProject
  * 6/10/20 09: 56
