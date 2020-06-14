@@ -1,4 +1,5 @@
 package Exercises.Array02;
+
 /**
  * FirstProject
  * 6/11/20 19: 13
@@ -17,7 +18,7 @@ public class Array18and19 {
         int[] second = {3, 1, 3, 3}; //false
         int[] third = {3, 4, 3, 3, 4}; //false
 
-        System.out.println(haveThree(first));
+//        System.out.println(haveThree(first));
 //        System.out.println(haveThree(second));
 //        System.out.println(haveThree(third));
 
@@ -28,21 +29,16 @@ public class Array18and19 {
 // to each other
     private static boolean haveThree(int[] array) {
         int count = 0;
-        int three = 3;
-        for (int i = 0; i < array.length; i++) {
-
-            if (array[i] == three) {
-                if (array[i + 1] != three && i < array.length) {
-                    count++;
-                    System.out.println(count);
-                } else {
-                    return false;
-                }
-
-            }
+        if (array.length >= 1 && array[0] == 3)
+            count++;
+        for (int i = 1; i < array.length; i++) {
+            if (array[i - 1] == 3 && array[i] == 3)
+                return false;
+            if (array[i] == 3)
+                count++;
 
         }
-        return count == three;
+        return count == 3;
     }
 
     // Exercises-Arrays-02-18

@@ -1,5 +1,4 @@
 package Exercises.Array02;
-
 import java.util.Arrays;
 
 /**
