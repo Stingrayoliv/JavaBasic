@@ -1,4 +1,4 @@
-package HomeworkAll;
+package HomeworkAll.Homework035ShellSortAndInsertSort;
 import java.util.Arrays;
 
 /**
