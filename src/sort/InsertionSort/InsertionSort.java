@@ -1,4 +1,4 @@
-package sort;
+package sort.InsertionSort;
 import java.util.Arrays;
 
 /**
