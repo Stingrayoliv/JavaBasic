@@ -1,4 +1,4 @@
-package HomeworkAll.OBJ;
+package HomeworkAll.Homework038OBJ;
 
 /**
  * FirstProject

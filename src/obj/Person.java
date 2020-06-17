@@ -14,8 +14,9 @@ public class Person {
     boolean imatrikulation;
     char selfTotem;
 
-    // пустой конструктор нужно первым писать
+    // пустой конструктор нужно первым писать (конструктор без логики и параметров)
     public Person() {
+        this.firstName = "just student";
 
     }
 
@@ -35,8 +36,10 @@ public class Person {
         double personHeight = height / 100;
 
         bmi = personWeight / (personHeight * personHeight);
+    }
 
-
+    void myPrint() {
+        System.out.println(firstName + " firstName" + " весит " + "weight" + "при росте" + height);
     }
 
 }
