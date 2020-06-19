@@ -27,7 +27,7 @@ public class StartUno {
         personTwo.firstName = "Елена";
         System.out.println("---------------- №2");
         personTwo.findBmiClassIndex();
-        System.out.println(personTwo.bmi);
+        //System.out.println(personTwo.bmi);
         System.out.println(personTwo.gender);
         System.out.println(personTwo.imatrikulation);
         System.out.println(personTwo.selfTotem);

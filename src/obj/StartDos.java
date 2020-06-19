@@ -16,12 +16,12 @@ public class StartDos {
 
         System.out.println(misha.height);
         misha.findBmiClassIndex();
-        System.out.println(misha.bmi);
+        //System.out.println(misha.bmi);
 
         sasha = new Person();
 
         dasha = new Person(65, 185);
-        System.out.println("Индекс массы тела Даши " + dasha.bmi);
+        //System.out.println("Индекс массы тела Даши " + dasha.bmi);
         pasha = new Person();
         glasha = new Person();
 
