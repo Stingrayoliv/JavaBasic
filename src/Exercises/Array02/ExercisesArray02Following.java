@@ -1,4 +1,4 @@
-package Exercises.recursion;
+package Exercises.Array02;
 
 import java.util.Arrays;
 
@@ -13,17 +13,17 @@ public class ExercisesArray02Following {
         int[] b = {0, 4, 0, 3}; //[3, 4, 3, 3]
         int[] c = {0, 1, 0}; //[1, 1, 0] Если справа от нуля нет нечетного значения, оставьте ноль как ноль.
 
-//        System.out.println(Arrays.toString(zeroMax(a)));
-//        System.out.println(Arrays.toString(zeroMax(b)));
-//        System.out.println(Arrays.toString(zeroMax(c)));
+        System.out.println(Arrays.toString(zeroMax(a)));
+        System.out.println(Arrays.toString(zeroMax(b)));
+        System.out.println(Arrays.toString(zeroMax(c)));
 
         //Exercises-Arrays-02 - 24
-        int[] k = {1, 2, 3, 4, 100}; //3
-        int[] l = {1, 1, 5, 5, 10, 8, 7};//5
-        int[] m = {-10, -4, -2, -4, -2, 0};//-3
-        System.out.println(centeredAverage(k));
-        System.out.println(centeredAverage(l));
-        System.out.println(centeredAverage(m));
+//        int[] k = {1, 2, 3, 4, 100}; //3
+//        int[] l = {1, 1, 5, 5, 10, 8, 7};//5
+//        int[] m = {-10, -4, -2, -4, -2, 0};//-3
+//        System.out.println(centeredAverage(k));
+//        System.out.println(centeredAverage(l));
+//        System.out.println(centeredAverage(m));
 
 //        System.out.println(findMin(k)); //1
 //        System.out.println(findMin(l));//1
@@ -76,25 +76,24 @@ public class ExercisesArray02Following {
     //Вернуть версию данного массива, где каждое нулевое значение в массиве заменяется наибольшим нечетным значением
     //справа от нуля в массиве. Если справа от нуля нет нечетного значения, оставьте ноль как ноль.
     public static int[] zeroMax(int[] array) {
-        int max = 0;
-        for (int i = 0; i < array.length - 1; i++) {
+        int max = array[0]; // максимальное значение
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == 0) {
-                for (int j = 1; j < array.length; j++) { // если array[j] не четное и array[j]> max
-//                    if (array[j] == 0) {
-//                        max = 0;
-//                    }
-                    if (array[j] % 2 == 1 && array[j] > max) {
+                for (int j = i + 1; j <= array.length - 1; j++) {//i+1 потому что берется правая часть массива
+                    // после нулевого значения
+                    if (array[j] % 2 == 1 && array[j] > max) {// если array[j] не четное и array[j]> max
                         max = array[j];
                     }
+
                 }
-                if (max != 0) {
-                    array[i] = max;
-                    //max = 0;
-                }
+
+                array[i] = max; //замена
+                max = 0; // обнуление max
             }
         }
         return array;
     }
+
 
 }
 
