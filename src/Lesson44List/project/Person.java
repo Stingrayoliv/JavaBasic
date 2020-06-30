@@ -1,5 +1,4 @@
 package Lesson44List.project;
-
 import java.util.Date;
 
 /**
@@ -10,17 +9,19 @@ public class Person {
     private String firstName;
     private int height; //см
     private double weight; //кг
-    private Date birthDayDay;
+    //private Date birthDayDay;
+    private int age;
     public Gender gender;
 
-    public Person() {
+    public Person(String игорь, int i) {
     }
 
-    public Person(String firstName, int height, double weight, Gender gender) {
+    public Person(String firstName, int height, double weight, Gender gender, int age) {
         this.firstName = firstName;
         this.height = height;
         this.weight = weight;
         this.gender = gender;
+        this.age = age;
     }
 
     public String getFirstName() {
@@ -33,10 +34,6 @@ public class Person {
 
     public double getWeight() {
         return weight;
-    }
-
-    public Date getBirthDayDay() {
-        return birthDayDay;
     }
 
     public Gender getGender() {
@@ -55,15 +52,19 @@ public class Person {
         this.weight = weight;
     }
 
-    public void setBirthDayDay(Date birthDayDay) {
-        this.birthDayDay = birthDayDay;
+    public int getAge() {
+        return age;
     }
-}
-class PersonTest{
-    public static void main(String[] args) {
-        Person p1 = new Person();
-         p1.gender= Gender.FEMALE;
 
-
+    public void setAge(int age) {
+        this.age = age;
     }
+
+    //class PersonTest{
+//    public static void main(String[] args) {
+//        Person p1 = new Person();
+//         p1.gender= Gender.FEMALE;
+//
+//
+//    }
 }

@@ -36,11 +36,11 @@ public class Pool {
     }
     public static ArrayList<Person> createPersonList() {
         ArrayList<Person> personArrayList = new ArrayList<>();
-        Person igor = new Person("Igor", 175, 86, Gender.MALE);
-        Person andrej = new Person("andrej", 160, 90, Gender.MALE);
-        Person gena = new Person("gena", 180, 86, Gender.MALE);
-        Person sveta = new Person("sveta", 175, 86, Gender.MALE);
-        Person ira = new Person("ira ", 175, 86, Gender.MALE);
+        Person igor = new Person("Igor", 175, 86, Gender.MALE, 35);
+        Person andrej = new Person("andrej", 160, 90, Gender.MALE, 28);
+        Person gena = new Person("gena", 180, 86, Gender.MALE, 45);
+        Person sveta = new Person("sveta", 175, 86, Gender.MALE, 67);
+        Person ira = new Person("ira ", 175, 86, Gender.MALE, 78);
 
         personArrayList.add(igor);
         personArrayList.add(andrej);
